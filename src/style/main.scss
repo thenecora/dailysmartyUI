@@ -1,28 +1,41 @@
 html {
-    font-size: 62.5%; // 1rem is 10px
-}
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-family: 'montserrat';
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    overflow-x: hidden;
-    font-weight: normal;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
+    font-family: 'Lato', sans-serif;
 }
 
-.app {
-    margin-top: 2rem;
+.app-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.logo-main, .recent-posts {
     display: grid;
     justify-items: center;
 }
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+$color-gray-one: #666666;
+$color-gray-two: #b3b3b3;
+$color-gray-three: #d8d8d8;
+$color-blue-one: #0079FF;
+
+.no-content {
+    color: $color-gray-two;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@import './mixins';
+@import './app';
+@import './searchBar';
+@import './recentPosts';
+@import './post';
+@import './results';

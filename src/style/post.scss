@@ -1,0 +1,18 @@
+.recent-post {
+    .recent-post-title a {
+        color: $color-gray-one;
+        text-decoration: none;
+    }
+    
+    .recent-post-topics {
+        margin-top: 8px;
+    }
+}
+
+.post-topic {
+    color: $color-gray-two;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 8px;
+}
